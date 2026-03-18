@@ -18,7 +18,7 @@ function ScrollToTop() {
   }, [pathname])
   return null
 }
-
+ 
 export default function App() {
   useEffect(() => {
     AOS.init({

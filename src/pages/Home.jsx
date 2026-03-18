@@ -1,4 +1,5 @@
-import { Users, Map, Building2, Landmark, Music2, Ship } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Landmark, Music2, Ship, ArrowRight } from 'lucide-react'
 
 export default function Home() {
     return (
@@ -19,95 +20,271 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* WHY SECTION */}
-            <section className="bg-white py-16 md:py-24 px-6 md:px-8" id="about">
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* WHY SECTION — bg-white */}
+            <section className="bg-white" id="about">
+                <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-10 py-16 md:py-[72px]">
 
-                    <div data-aos="fade-up">
-                        <h2 className="text-2xl md:text-3xl font-extrabold leading-snug text-navy tracking-tight mb-4">
-                            Why <span className="text-brand">Ozamiz City</span><br />Should Be Your Next Destination
+                    {/* Left — text */}
+                    <div data-aos="fade-right" className="flex flex-col justify-center md:pr-6">
+
+                        <div className="flex items-center gap-2.5 mb-4">
+                            <div className="w-6 h-[1.5px] bg-brand shrink-0" />
+                            <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-brand">Why visit</span>
+                        </div>
+
+                        <h2 className="text-[clamp(1.8rem,3vw,2.5rem)] font-extrabold text-navy tracking-tight leading-[1.1] mb-4">
+                            Your next destination<br />is <span className="text-brand">Ozamiz City</span>
                         </h2>
-                        <p className="text-gray-500 leading-relaxed text-sm">
-                            Whether you're discovering historic sites, enjoying coastal scenery, or experiencing local culture,
-                            Ozamiz offers something for every traveler. A city where heritage meets modern life, and every
-                            street tells a story worth exploring.
+
+                        <p className="text-[13.5px] text-gray-500 leading-[1.72] mb-9 max-w-[380px]">
+                            Where heritage meets the sea. A city shaped by centuries of resilience,
+                            vibrant culture, and a coastline that opens to the rest of Mindanao.
                         </p>
-                        <div className="flex gap-6 md:gap-10 mt-8 flex-wrap">
-                            {[
-                                { Icon: Users, value: '163,000+', label: 'Population' },
-                                { Icon: Map, value: '170 km²', label: 'City Area' },
-                                { Icon: Building2, value: '54', label: 'Barangays' },
-                            ].map(({ Icon, value, label }) => (
-                                <div key={label} className="flex flex-col items-center gap-1">
-                                    <div className="w-11 h-11 bg-brand rounded-full flex items-center justify-center">
-                                        <Icon className="w-5 h-5 text-white" />
-                                    </div>
-                                    <span className="text-xl font-extrabold text-navy tracking-tight">{value}</span>
-                                    <span className="text-[0.68rem] text-gray-400 uppercase tracking-widest font-medium">{label}</span>
+
+                        {/* Feature rows */}
+                        <div className="flex flex-col">
+
+                            <div className="flex items-start gap-3.5 py-[15px] border-t border-slate-100">
+                                <div className="w-9 h-9 rounded-[10px] bg-blue-50 flex items-center justify-center shrink-0 mt-0.5">
+                                    <Landmark size={15} className="text-brand" />
                                 </div>
-                            ))}
+                                <div>
+                                    <div className="text-[13px] font-bold text-navy mb-1 tracking-tight">Rich History & Heritage</div>
+                                    <div className="text-[12px] text-gray-400 leading-[1.55]">Fort Santiago (Cotta) — a Spanish colonial fortress standing for over 400 years.</div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-3.5 py-[15px] border-t border-slate-100">
+                                <div className="w-9 h-9 rounded-[10px] bg-blue-50 flex items-center justify-center shrink-0 mt-0.5">
+                                    <Music2 size={15} className="text-brand" />
+                                </div>
+                                <div>
+                                    <div className="text-[13px] font-bold text-navy mb-1 tracking-tight">Vibrant Local Culture</div>
+                                    <div className="text-[12px] text-gray-400 leading-[1.55]">The Sinulog Festival and living Mindanaoan traditions celebrated year-round.</div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-3.5 py-[15px] border-t border-b border-slate-100">
+                                <div className="w-9 h-9 rounded-[10px] bg-blue-50 flex items-center justify-center shrink-0 mt-0.5">
+                                    <Ship size={15} className="text-brand" />
+                                </div>
+                                <div>
+                                    <div className="text-[13px] font-bold text-navy mb-1 tracking-tight">Gateway Port City</div>
+                                    <div className="text-[12px] text-gray-400 leading-[1.55]">Strategic maritime hub linking Mindanao directly to the Visayas islands.</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="150">
-                        {[
-                            { Icon: Landmark, title: 'Rich History & Heritage', desc: 'Explore Fort Santiago (Cotta), a Spanish colonial fortress over 400 years old' },
-                            { Icon: Music2, title: 'Vibrant Local Culture', desc: 'Experience the Sinulog Festival and colorful Mindanaoan traditions' },
-                            { Icon: Ship, title: 'Gateway Port City', desc: 'Strategic maritime hub connecting Mindanao to the Visayas islands' },
-                        ].map(({ Icon, title, desc }) => (
-                            <div key={title} className="flex items-center gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-5 hover:translate-x-1.5 hover:shadow-lg transition-all duration-300">
-                                <div className="w-10 h-10 bg-brand rounded-xl flex items-center justify-center shrink-0">
-                                    <Icon className="w-5 h-5 text-white" />
-                                </div>
-                                <div>
-                                    <h4 className="text-sm font-bold text-navy mb-0.5">{title}</h4>
-                                    <p className="text-xs text-gray-500">{desc}</p>
-                                </div>
-                            </div>
-                        ))}
+                    {/* Right — image */}
+                    <div data-aos="fade-left" className="relative w-full rounded-2xl overflow-hidden h-[420px]">
+                        <img src="/images/hero.png" alt="Ozamiz City" className="absolute inset-0 w-full h-full object-cover" />
                     </div>
 
                 </div>
             </section>
 
-            {/* CITY HIGHLIGHTS */}
-            <section className="bg-slate-50 py-16 md:py-24 px-6 md:px-8" id="explore">
-                <div className="max-w-6xl mx-auto">
-                    <div className="flex flex-col md:flex-row items-start justify-between mb-10 gap-4 md:gap-8" data-aos="fade-up">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-navy tracking-tight">City highlights</h2>
-                        <p className="md:max-w-sm text-gray-500 text-sm leading-relaxed md:pt-1">
-                            From tourist attractions to economic activities, discover where your next journey will take you.
+            {/* STATS BAND — bg-blue-50 */}
+            <div data-aos="fade-up" className="bg-blue-50 border-y border-blue-100">
+                <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-2 md:grid-cols-4">
+
+                    <div className="flex flex-col items-center gap-1 py-7 border-r border-blue-200">
+                        <span className="font-extrabold text-navy leading-none text-[1.65rem] tracking-[-0.03em]">163K+</span>
+                        <span className="font-bold tracking-[0.2em] uppercase text-blue-300 mt-1 text-[9.5px]">Population</span>
+                    </div>
+
+                    <div className="flex flex-col items-center gap-1 py-7 border-r border-blue-200">
+                        <span className="font-extrabold text-navy leading-none text-[1.65rem] tracking-[-0.03em]">54</span>
+                        <span className="font-bold tracking-[0.2em] uppercase text-blue-300 mt-1 text-[9.5px]">Barangays</span>
+                    </div>
+
+                    <div className="flex flex-col items-center gap-1 py-7 border-r border-blue-200">
+                        <span className="font-extrabold text-navy leading-none text-[1.65rem] tracking-[-0.03em]">170 km²</span>
+                        <span className="font-bold tracking-[0.2em] uppercase text-blue-300 mt-1 text-[9.5px]">City Area</span>
+                    </div>
+
+                    <div className="flex flex-col items-center gap-1 py-7">
+                        <span className="font-extrabold text-navy leading-none text-[1.65rem] tracking-[-0.03em]">400+</span>
+                        <span className="font-bold tracking-[0.2em] uppercase text-blue-300 mt-1 text-[9.5px]">Yrs of History</span>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* CITY HIGHLIGHTS — bg-slate-50 */}
+            <section className="bg-slate-50 py-16 md:py-20" id="explore">
+                <div className="max-w-6xl mx-auto px-6 md:px-8">
+
+                    <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-9 gap-4" data-aos="fade-up">
+                        <div>
+                            <div className="flex items-center gap-2.5 mb-3">
+                                <div className="w-6 h-[1.5px] bg-brand" />
+                                <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-brand">Explore the city</span>
+                            </div>
+                            <h2 className="text-[clamp(1.75rem,3vw,2.4rem)] font-extrabold text-navy tracking-tight leading-none">
+                                City <span className="font-light">Highlights</span>
+                            </h2>
+                        </div>
+                        <p className="text-[13px] text-slate-400 leading-[1.65] md:text-right md:max-w-[210px]">
+                            Tourist spots, living culture, and a thriving port economy.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
-                        {[
-                            { img: './images/touristspot 1.png', badge: 'Explore', title: 'Tourist Spots', desc: 'Immaculate Conception Cathedral, Cotta', delay: 0 },
-                            { img: './images/culture 1.png', badge: 'Culture', title: 'Culture', desc: 'Sinulog King Ballroom Resources', delay: 100 },
-                            { img: './images/image 2.png', badge: 'Economic', title: 'Economic', desc: 'Ozamiz City Port, Marine Resources', delay: 200, span: 'sm:col-span-2 md:col-span-1' },
-                        ].map(({ img, badge, title, desc, delay, span = '' }) => (
-                            <div
-                                key={title}
-                                data-aos="fade-up"
-                                data-aos-delay={delay}
-                                className={`relative rounded-2xl overflow-hidden h-72 md:h-80 cursor-pointer shadow-md hover:-translate-y-2 hover:shadow-2xl group transition-all duration-300 ${span}`}
-                            >
-                                <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/10 to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
-                                    <span className="inline-block bg-gold text-navy text-[0.65rem] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-2">{badge}</span>
-                                    <h3 className="text-white text-lg font-extrabold tracking-tight mb-1">{title}</h3>
-                                    <p className="text-white/60 text-xs">{desc}</p>
+                    {/* Mobile grid */}
+                    <div className="flex flex-col gap-3 md:hidden">
+
+                        <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[260px]">
+                            <img src="/images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 z-10 p-[22px_24px] px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Explore
                                 </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">Tourist Spots</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Immaculate Conception Cathedral, Fort Santiago (Cotta), and scenic Panguil Bay coastline.</p>
                             </div>
-                        ))}
+                        </div>
+
+                        <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
+                            <img src="/images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Culture
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">Culture & Heritage</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Sinulog Festival and Mindanaoan traditions.</p>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
+                            <img src="/images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />City Life
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">City Life</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Modern living with deep community roots.</p>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
+                            <img src="/images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />History
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">400 Yrs of History</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">From colonial fortress to modern city.</p>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
+                            <img src="/images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Economic
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">Port & Commerce</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Gateway maritime hub and marine resources.</p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className="text-center mt-10" data-aos="fade-up">
-                        <button className="bg-brand hover:bg-blue-800 text-white font-semibold text-sm tracking-wide px-10 py-3 rounded-lg hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-900/30 transition-all duration-200 cursor-pointer">
-                            View More
-                        </button>
+                    {/* Desktop grid */}
+                    <div className="hidden md:grid gap-3 [grid-template-columns:1.55fr_1fr_1fr] [grid-template-rows:260px_200px]">
+
+                        {/* Tourist Spots — spans both rows */}
+                        <div
+                            data-aos="fade-right"
+                            className="relative rounded-2xl overflow-hidden cursor-pointer group [grid-row:1/3]"
+                        >
+                            <img src="/images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-[linear-gradient(155deg,transparent_35%,rgba(10,22,40,0.5)_65%,rgba(10,22,40,0.96)_100%)]" />
+                            <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[130px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">01</span>
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-8 py-[30px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Explore
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.9rem]">Tourist Spots</h3>
+                                <p className="leading-[1.55] text-[13px] text-white/45 max-w-[280px]">Immaculate Conception Cathedral, Fort Santiago (Cotta), and scenic Panguil Bay coastline.</p>
+                            </div>
+                        </div>
+
+                        {/* Culture */}
+                        <div data-aos="fade-up" data-aos-delay="80" className="relative rounded-2xl overflow-hidden cursor-pointer group">
+                            <img src="/images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">02</span>
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Culture
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">Culture & Heritage</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Sinulog Festival and Mindanaoan traditions.</p>
+                            </div>
+                        </div>
+
+                        {/* City Life */}
+                        <div data-aos="fade-up" data-aos-delay="80" className="relative rounded-2xl overflow-hidden cursor-pointer group">
+                            <img src="/images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">03</span>
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />City Life
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">City Life</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Modern living with deep community roots.</p>
+                            </div>
+                        </div>
+
+                        {/* History */}
+                        <div data-aos="fade-up" data-aos-delay="160" className="relative rounded-2xl overflow-hidden cursor-pointer group">
+                            <img src="/images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">04</span>
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />History
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">400 Yrs of History</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">From colonial fortress to modern city.</p>
+                            </div>
+                        </div>
+
+                        {/* Economic */}
+                        <div data-aos="fade-up" data-aos-delay="160" className="relative rounded-2xl overflow-hidden cursor-pointer group">
+                            <img src="/images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
+                            <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">05</span>
+                            <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
+                                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
+                                    <span className="w-1 h-1 rounded-full inline-block bg-gold" />Economic
+                                </div>
+                                <h3 className="font-extrabold text-white tracking-[-0.025em] leading-tight mb-1.5 text-[1.25rem]">Port & Commerce</h3>
+                                <p className="leading-[1.55] text-[12px] text-white/45">Gateway maritime hub and marine resources.</p>
+                            </div>
+                        </div>
+
                     </div>
+
+                    {/* Explore More CTA */}
+                    <div className="flex justify-center mt-10" data-aos="fade-up">
+                        <Link
+                            to="/explore"
+                            className="inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold tracking-wide px-8 py-3 rounded-lg hover:bg-blue-800 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-900/20 transition-all duration-200 no-underline"
+                        >
+                            Explore More
+                            <ArrowRight size={14} />
+                        </Link>
+                    </div>
+
                 </div>
             </section>
         </>
