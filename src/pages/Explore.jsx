@@ -148,8 +148,8 @@ export default function Explore() {
                             <h3 className="text-[clamp(1.4rem,2.5vw,1.9rem)] font-extrabold text-navy tracking-tight leading-snug mb-4">
                                 Subayan Keg Subanen Festival
                             </h3>
-                            <p className="text-sm text-gray-500 leading-relaxed max-w-md">
-                                The Subayan Keg Subanen Festival is an annual celebration in Ozamiz City that honors the heritage, traditions, and culture of the Subanen indigenous people through dancing, music, and colorful performances.
+                            <p className="text-sm text-gray-500 text-justify leading-relaxed max-w-md">
+                                The Subayan Keg Subanen Festival is an annual celebration in Ozamiz City that honors the rich heritage, traditions, and identity of the Subanen people, the area’s original inhabitants. Often held alongside the city’s Charter Day festivities, it showcases vibrant street dancing, traditional music using gongs and drums, and colorful costumes adorned with indigenous patterns and beadwork. Through these performances, participants reenact rituals, daily life, and cultural stories, making the festival not just an entertaining event but also a meaningful way to preserve and promote indigenous culture for future generations.
                             </p>
                         </div>
 
