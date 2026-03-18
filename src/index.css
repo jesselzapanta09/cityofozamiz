@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a1628;
+  --color-brand: #1a56a0;
+  --color-gold: #d4a843;
+
+  --font-family-inter: 'Inter', sans-serif;
+
+  --animate-heroZoom: heroZoom 14s ease-out forwards;
+  --animate-fadeUp: fadeUp 1s ease 0.5s forwards;
+  --animate-slideDown: slideDown 0.25s ease forwards;
+
+  --keyframes-heroZoom-0%: { transform: scale(1.07) };
+  --keyframes-heroZoom-100%: { transform: scale(1) };
+
+  --keyframes-fadeUp-0%: { opacity: 0; transform: translateY(32px) };
+  --keyframes-fadeUp-100%: { opacity: 1; transform: translateY(0) };
+
+  --keyframes-slideDown-0%: { opacity: 0; transform: translateY(-10px) };
+  --keyframes-slideDown-100%: { opacity: 1; transform: translateY(0) };
+}
+
+@keyframes heroZoom {
+  0% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(32px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-heroZoom { animation: heroZoom 14s ease-out forwards; }
+.animate-fadeUp { animation: fadeUp 1s ease 0.5s forwards; }
+.animate-slideDown { animation: slideDown 0.25s ease forwards; }
+
+body {
+  font-family: 'Inter', sans-serif;
+}
