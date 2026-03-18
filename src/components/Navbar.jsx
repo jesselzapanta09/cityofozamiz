@@ -32,10 +32,10 @@ export default function Navbar() {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10 ${scrolled || menuOpen ? 'bg-navy/95 shadow-xl backdrop-blur-md' : 'bg-white/10 backdrop-blur-md'
                 }`}
         >
-            <div className="max-w-6xl mx-auto px-6 md:px-8 flex items-center justify-between h-[70px]">
+            <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-[70px]">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-3 no-underline">
-                    <img src="./images/oz logo.png" alt="Ozamiz City Seal" className="w-10 h-10 rounded-full object-cover" />
+                    <img src="./images/oz-logo.png" alt="Ozamiz City Seal" className="w-10 h-10 rounded-full object-cover" />
                     <span className="text-white font-bold text-[0.95rem] tracking-wide">Ozamiz City</span>
                 </Link>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {menuOpen && (
                 <div className="md:hidden bg-navy/97 backdrop-blur-md border-t border-white/10">
-                    <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                    <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
                         {navLinks.map(({ label, path }) => (
                             <Link
                                 key={path}
