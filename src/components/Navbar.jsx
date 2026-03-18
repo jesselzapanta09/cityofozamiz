@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto px-6 md:px-8 flex items-center justify-between h-[70px]">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-3 no-underline">
-                    <img src="/images/oz logo.png" alt="Ozamiz City Seal" className="w-10 h-10 rounded-full object-cover" />
+                    <img src="./images/oz logo.png" alt="Ozamiz City Seal" className="w-10 h-10 rounded-full object-cover" />
                     <span className="text-white font-bold text-[0.95rem] tracking-wide">Ozamiz City</span>
                 </Link>
 

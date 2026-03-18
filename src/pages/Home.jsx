@@ -6,7 +6,7 @@ export default function Home() {
             {/* HERO */}
             <section className="relative h-screen overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 z-0 animate-heroZoom">
-                    <img src="/images/hero.png" alt="Ozamiz City" className="w-full h-full object-cover" />
+                    <img src="./images/hero.png" alt="Ozamiz City" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute inset-0 z-10 bg-gradient-to-b from-navy/40 via-navy/20 to-navy/70" />
                 <div className="relative z-20 text-center opacity-0 animate-fadeUp px-6 md:px-8">
@@ -82,9 +82,9 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
                         {[
-                            { img: '/images/touristspot 1.png', badge: 'Explore', title: 'Tourist Spots', desc: 'Immaculate Conception Cathedral, Cotta', delay: 0 },
-                            { img: '/images/culture 1.png', badge: 'Culture', title: 'Culture', desc: 'Sinulog King Ballroom Resources', delay: 100 },
-                            { img: '/images/image 2.png', badge: 'Economic', title: 'Economic', desc: 'Ozamiz City Port, Marine Resources', delay: 200, span: 'sm:col-span-2 md:col-span-1' },
+                            { img: './images/touristspot 1.png', badge: 'Explore', title: 'Tourist Spots', desc: 'Immaculate Conception Cathedral, Cotta', delay: 0 },
+                            { img: './images/culture 1.png', badge: 'Culture', title: 'Culture', desc: 'Sinulog King Ballroom Resources', delay: 100 },
+                            { img: './images/image 2.png', badge: 'Economic', title: 'Economic', desc: 'Ozamiz City Port, Marine Resources', delay: 200, span: 'sm:col-span-2 md:col-span-1' },
                         ].map(({ img, badge, title, desc, delay, span = '' }) => (
                             <div
                                 key={title}

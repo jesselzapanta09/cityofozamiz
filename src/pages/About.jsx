@@ -6,7 +6,7 @@ export default function About() {
             {/* HERO */}
             <section className="relative h-screen overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 z-0">
-                    <img src="/images/about 1.png" alt="Ozamiz City Hall" className="w-full h-full object-cover" />
+                    <img src="./images/about 1.png" alt="Ozamiz City Hall" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute inset-0 z-10 bg-gradient-to-b from-navy/50 via-navy/30 to-navy/75" />
                 <div className="relative z-20 text-center opacity-0 animate-fadeUp px-6 md:px-8">
@@ -38,7 +38,7 @@ export default function About() {
                     </div>
 
                     <div className="w-full md:w-1/2 relative" style={{ minHeight: '400px' }} data-aos="fade-left" data-aos-delay="150">
-                        <img src="/images/ozamiz.png" alt="Joaquin Velez Ozamiz" className="w-full h-full object-cover grayscale absolute inset-0" style={{ minHeight: '400px' }} />
+                        <img src="./images/ozamiz.png" alt="Joaquin Velez Ozamiz" className="w-full h-full object-cover grayscale absolute inset-0" style={{ minHeight: '400px' }} />
                         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
                         <div className="absolute bottom-8 left-8">
                             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-3">
@@ -59,7 +59,7 @@ export default function About() {
                     </div>
 
                     <div data-aos="fade-up" className="rounded-2xl overflow-hidden shadow-lg mb-12 h-92">
-                        <img src="/images/history.png" alt="Fort del Pilar - Historical Sketch" className="w-full h-full object-cover object-top" />
+                        <img src="./images/history.png" alt="Fort del Pilar - Historical Sketch" className="w-full h-full object-cover object-top" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

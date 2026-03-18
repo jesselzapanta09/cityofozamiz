@@ -8,9 +8,9 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12 pb-10 border-b border-white/10">
                     <div className="min-w-[150px]">
                         <div className="flex gap-3 items-center mb-3">
-                            <img src="/images/image 4.png" alt="Dept of Tourism" className="w-11 h-11 rounded-full object-cover border border-white/20" />
-                            <img src="/images/image 3.png" alt="Misamis Occidental" className="w-11 h-11 rounded-full object-cover border border-white/20" />
-                            <img src="/images/oz logo.png" alt="City of Ozamiz" className="w-11 h-11 rounded-full object-cover border border-white/20" />
+                            <img src="./images/image 4.png" alt="Dept of Tourism" className="w-11 h-11 rounded-full object-cover border border-white/20" />
+                            <img src="./images/image 3.png" alt="Misamis Occidental" className="w-11 h-11 rounded-full object-cover border border-white/20" />
+                            <img src="./images/oz logo.png" alt="City of Ozamiz" className="w-11 h-11 rounded-full object-cover border border-white/20" />
                         </div>
                         <p className="text-white/50 text-xs leading-relaxed">City of Ozamiz<br />Tourism Office</p>
                     </div>
