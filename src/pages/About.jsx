@@ -26,15 +26,15 @@ export default function About() {
                         <h2 className="text-[clamp(1.8rem,3vw,2.5rem)] font-extrabold text-navy tracking-tight leading-tight mb-4">
                             Origin of the Name<br /><span className="text-brand">"Ozamiz"</span>
                         </h2>
-                        <p className="text-sm text-gray-500 leading-relaxed mb-4 max-w-md">
-                            The city was named after <strong className="text-gray-700">Joaquin Velez</strong>, a respected freedom fighter and
-                            resistance leader during World War II. He courageously fought against the Japanese occupation and was recognized
-                            by the Philippine government as a resistance movement in honor of his bravery and service. In the 1940s, the
-                            city of Misamis was renamed Ozamiz in tribute to his contributions.
+                        <p className="text-sm text-gray-500 text-justify leading-relaxed mb-4 max-w-md">
+                            The city was named after <strong className="text-gray-700">Jose Ozamiz</strong>, a distinguished Filipino senator and
+                            patriot who bravely resisted the Japanese occupation during World War II. He was captured and executed in 1942,
+                            becoming a symbol of courage and sacrifice. In 1948, the former town of Misamis was officially renamed Ozamiz in
+                            his honor, recognizing his heroism and contribution to the nation.
                         </p>
-                        <p className="text-sm text-gray-500 leading-relaxed max-w-md">
-                            From a small coastal settlement to a thriving city, Ozamiz has grown into a vital center of commerce, education,
-                            and culture in Northern Mindanao — carrying with it the spirit of resilience that defined its founding.
+                        <p className="text-sm text-gray-500 text-justify leading-relaxed max-w-md">
+                            From a small coastal settlement, Ozamiz has grown into a thriving city and a key center of commerce, education,
+                            and culture in Northern Mindanao—carrying forward a legacy of resilience rooted in its rich history.
                         </p>
                     </div>
 
@@ -43,7 +43,7 @@ export default function About() {
                         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
                         <div className="absolute bottom-6 left-6">
                             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-3">
-                                <p className="text-white text-sm font-bold tracking-wide">Joaquin Velez Ozamiz</p>
+                                <p className="text-white text-sm font-bold tracking-wide">Jose Ozamiz</p>
                                 <p className="text-white/60 text-xs mt-0.5">City's Namesake</p>
                             </div>
                         </div>
@@ -74,8 +74,11 @@ export default function About() {
                                 </div>
                                 <div>
                                     <span className="text-xs font-bold text-gold uppercase tracking-widest">Pre-1900s – Early 1940s</span>
-                                    <h3 className="text-base font-extrabold text-navy mt-1 mb-2">Ozamiz City was originally called Misamis</h3>
-                                    <p className="text-sm text-gray-500 leading-relaxed">The settlement served as a key Spanish colonial outpost and was later recognized as a major municipality in the province of Misamis Occidental.</p>
+                                    <h3 className="text-base font-extrabold text-navy mt-1 mb-2">Originally Known as Misamis</h3>
+                                    <p className="text-sm text-gray-500 leading-relaxed">
+                                        Ozamiz was formerly known as Misamis, a coastal settlement that became an important Spanish-era
+                                        outpost and later developed into a key municipality in Misamis Occidental.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -86,9 +89,12 @@ export default function About() {
                                     <Landmark className="w-5 h-5 text-brand" />
                                 </div>
                                 <div>
-                                    <span className="text-xs font-bold text-gold uppercase tracking-widest">16th Century</span>
+                                    <span className="text-xs font-bold text-gold uppercase tracking-widest">1756</span>
                                     <h3 className="text-base font-extrabold text-navy mt-1 mb-2">Fuerte de la Concepcion y del Triunfo</h3>
-                                    <p className="text-sm text-gray-500 leading-relaxed">Spanish settlement established in the 9th century. During the Spanish colonial period, the town served as an important military outpost to protect the region from pirates and invaders.</p>
+                                    <p className="text-sm text-gray-500 leading-relaxed">
+                                        The Spanish built this historic fort, now known as the Cotta, to defend the area against Moro
+                                        raiders. It remains one of the city's most iconic landmarks.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +105,12 @@ export default function About() {
                                     <Shield className="w-5 h-5 text-brand" />
                                 </div>
                                 <div>
-                                    <span className="text-xs font-bold text-gold uppercase tracking-widest">World War II</span>
+                                    <span className="text-xs font-bold text-gold uppercase tracking-widest">World War II – 1948</span>
                                     <h3 className="text-base font-extrabold text-navy mt-1 mb-2">Resistance & Renaming</h3>
-                                    <p className="text-sm text-gray-500 leading-relaxed">A key historical landmark from 9th century Ozamiz is the Cotta — a fort historically known as the "Fuerte de la Concepcion del Triunfo." The city was later renamed Ozamiz City in honor of the resistance leader, officially becoming Ozamiz City in 1948.</p>
+                                    <p className="text-sm text-gray-500 leading-relaxed">
+                                        The city was renamed Ozamiz in 1948 in honor of Jose Ozamiz, a Filipino senator who resisted
+                                        Japanese forces during World War II and was executed for his bravery.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -114,48 +123,88 @@ export default function About() {
                                 <div>
                                     <span className="text-xs font-bold text-gold uppercase tracking-widest">Present Day</span>
                                     <h3 className="text-base font-extrabold text-navy mt-1 mb-2">A Modern City with Deep Roots</h3>
-                                    <p className="text-sm text-gray-500 leading-relaxed">Today, Ozamiz City is a thriving component city and the major commercial and educational hub of Misamis Occidental, home to over 163,000 residents across 54 barangays.</p>
+                                    <p className="text-sm text-gray-500 leading-relaxed">
+                                        Today, Ozamiz City is a thriving component city and a major commercial and educational hub in
+                                        Misamis Occidental, home to over 160,000 residents across its barangays.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
             {/* GEOGRAPHIC + POPULATION — bg-blue-50 */}
             <section className="bg-blue-50 py-16 md:py-20">
                 <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+
+                    {/* GEOGRAPHIC */}
                     <div>
                         <div className="flex items-center gap-2.5 mb-6">
                             <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center shrink-0">
                                 <Globe className="w-4 h-4 text-white" />
                             </div>
-                            <h2 className="text-lg md:text-xl font-extrabold text-navy tracking-tight">Geographic Location</h2>
+                            <h2 className="text-lg md:text-xl font-extrabold text-navy tracking-tight">
+                                Geographic Location
+                            </h2>
                         </div>
+
                         <ul className="flex flex-col gap-3 list-none p-0 m-0">
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Northern Mindanao</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Misamis Occidental Province</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Along Panguil Bay</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />In Misamis Occidental</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Coastal city</li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Northern Mindanao Region
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Province of Misamis Occidental
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Located along Panguil Bay
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Coastal gateway city in Northwestern Mindanao
+                            </li>
                         </ul>
                     </div>
 
+                    {/* POPULATION */}
                     <div>
                         <div className="flex items-center gap-2.5 mb-6">
                             <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center shrink-0">
                                 <Users className="w-4 h-4 text-white" />
                             </div>
-                            <h2 className="text-lg md:text-xl font-extrabold text-navy tracking-tight">Population & Demographics</h2>
+                            <h2 className="text-lg md:text-xl font-extrabold text-navy tracking-tight">
+                                Population & Demographics
+                            </h2>
                         </div>
+
                         <ul className="flex flex-col gap-3 list-none p-0 m-0">
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />163,000+ residents</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />54 barangays</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Cebuano speaking</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Filipino & English used</li>
-                            <li className="flex items-center gap-3 text-gray-500 text-sm"><ChevronRight className="w-4 h-4 text-brand shrink-0" />Diverse natives</li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Over 163,000 residents
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                54 barangays
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Primarily Cebuano-speaking
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Filipino and English widely used
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-500 text-sm">
+                                <ChevronRight className="w-4 h-4 text-brand shrink-0" />
+                                Culturally diverse community with Subanen heritage
+                            </li>
                         </ul>
                     </div>
+
                 </div>
             </section>
 

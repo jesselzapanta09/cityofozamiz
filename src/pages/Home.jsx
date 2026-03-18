@@ -56,7 +56,7 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <div className="text-sm font-bold text-navy mb-1 tracking-tight">Vibrant Local Culture</div>
-                                    <div className="text-xs text-gray-400 leading-relaxed">The Sinulog Festival and living Mindanaoan traditions celebrated year-round.</div>
+                                    <div className="text-xs text-gray-400 leading-relaxed">The Subayan Keg Subanen Festival and living Mindanaoan traditions celebrated year-round.</div>
                                 </div>
                             </div>
 

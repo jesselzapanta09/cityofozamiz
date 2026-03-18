@@ -214,7 +214,7 @@ export default function Explore() {
                         </div>
 
                         <div className="relative rounded-2xl overflow-hidden  group h-64">
-                            <img src="./images/oz-kinilaw.png" alt="Fish Ceviche" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
+                            <img src="./images/oz-suman.png" alt="Fish Ceviche" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-7 py-6">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-widest uppercase bg-gold/10 border border-gold/30 text-gold">
