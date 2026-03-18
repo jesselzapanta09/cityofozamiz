@@ -79,7 +79,7 @@ export default function Home() {
 
                     {/* Right — image */}
                     <div data-aos="fade-left" className="relative w-full rounded-2xl overflow-hidden h-[420px]">
-                        <img src="/images/hero.png" alt="Ozamiz City" className="absolute inset-0 w-full h-full object-cover" />
+                        <img src="./images/hero.png" alt="Ozamiz City" className="absolute inset-0 w-full h-full object-cover" />
                     </div>
 
                 </div>
@@ -135,7 +135,7 @@ export default function Home() {
                     <div className="flex flex-col gap-3 md:hidden">
 
                         <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[260px]">
-                            <img src="/images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 p-[22px_24px] px-6 py-[22px]">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
@@ -147,7 +147,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
-                            <img src="/images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
@@ -159,7 +159,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
-                            <img src="/images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
@@ -171,7 +171,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
-                            <img src="/images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
@@ -183,7 +183,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" className="relative rounded-2xl overflow-hidden cursor-pointer group h-[220px]">
-                            <img src="/images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
                                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md mb-2 text-[9.5px] font-bold tracking-[.16em] uppercase bg-[rgba(212,168,67,0.1)] border border-[rgba(212,168,67,0.3)] text-gold">
@@ -204,7 +204,7 @@ export default function Home() {
                             data-aos="fade-right"
                             className="relative rounded-2xl overflow-hidden cursor-pointer group [grid-row:1/3]"
                         >
-                            <img src="/images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/touristspot 1.png" alt="Tourist Spots" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-[linear-gradient(155deg,transparent_35%,rgba(10,22,40,0.5)_65%,rgba(10,22,40,0.96)_100%)]" />
                             <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[130px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">01</span>
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-8 py-[30px]">
@@ -218,7 +218,7 @@ export default function Home() {
 
                         {/* Culture */}
                         <div data-aos="fade-up" data-aos-delay="80" className="relative rounded-2xl overflow-hidden cursor-pointer group">
-                            <img src="/images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/culture 1.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">02</span>
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
@@ -232,7 +232,7 @@ export default function Home() {
 
                         {/* City Life */}
                         <div data-aos="fade-up" data-aos-delay="80" className="relative rounded-2xl overflow-hidden cursor-pointer group">
-                            <img src="/images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/about 1.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">03</span>
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
@@ -246,7 +246,7 @@ export default function Home() {
 
                         {/* History */}
                         <div data-aos="fade-up" data-aos-delay="160" className="relative rounded-2xl overflow-hidden cursor-pointer group">
-                            <img src="/images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/history.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">04</span>
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
@@ -260,7 +260,7 @@ export default function Home() {
 
                         {/* Economic */}
                         <div data-aos="fade-up" data-aos-delay="160" className="relative rounded-2xl overflow-hidden cursor-pointer group">
-                            <img src="/images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
+                            <img src="./images/image 2.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,22,40,0.96)] via-[rgba(10,22,40,0.18)] to-transparent" />
                             <span className="absolute top-0 right-0 font-black leading-none pointer-events-none select-none text-[80px] text-[rgba(255,255,255,0.04)] tracking-[-0.04em] pr-[14px] pt-[8px]">05</span>
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-[22px]">
