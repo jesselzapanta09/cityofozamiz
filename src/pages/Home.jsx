@@ -95,7 +95,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col items-center gap-1 py-7">
                         <span className="font-extrabold text-navy leading-none text-3xl tracking-tight">400+</span>
-                        <span className="font-bold tracking-widest uppercase text-blue-300 mt-1 text-[9.5px]">Yrs of History</span>
+                        <span className="font-bold tracking-widest uppercase text-blue-300 mt-1 text-[9.5px]">Years of History</span>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 gap-3 md:[grid-template-columns:1.55fr_1fr_1fr] md:[grid-template-rows:260px_200px]">
 
                         {/* Tourist Spots — tall left card */}
-                        <div className="relative rounded-2xl overflow-hidden cursor-pointer group h-64 md:h-auto md:[grid-row:1/3]">
+                        <div className="relative rounded-2xl overflow-hidden group h-64 md:h-auto md:[grid-row:1/3]">
                             <img src="./images/oz-home-ts.png" alt="Tourist Spots" className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-[linear-gradient(155deg,transparent_35%,rgba(10,22,40,0.5)_65%,rgba(10,22,40,0.96)_100%)]" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-8 py-7">
@@ -133,7 +133,7 @@ export default function Home() {
                         </div>
 
                         {/* Culture */}
-                        <div className="relative rounded-2xl overflow-hidden cursor-pointer group h-56 md:h-auto">
+                        <div className="relative rounded-2xl overflow-hidden group h-56 md:h-auto">
                             <img src="./images/oz-subanen.png" alt="Culture & Heritage" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-5">
@@ -146,7 +146,7 @@ export default function Home() {
                         </div>
 
                         {/* City Life */}
-                        <div className="relative rounded-2xl overflow-hidden cursor-pointer group h-56 md:h-auto">
+                        <div className="relative rounded-2xl overflow-hidden group h-56 md:h-auto">
                             <img src="./images/oz-city-hall.png" alt="City Life" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-5">
@@ -159,7 +159,7 @@ export default function Home() {
                         </div>
 
                         {/* History */}
-                        <div className="relative rounded-2xl overflow-hidden cursor-pointer group h-56 md:h-auto">
+                        <div className="relative rounded-2xl overflow-hidden group h-56 md:h-auto">
                             <img src="./images/oz-his.png" alt="400 Yrs of History" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-5">
@@ -172,7 +172,7 @@ export default function Home() {
                         </div>
 
                         {/* Economic */}
-                        <div className="relative rounded-2xl overflow-hidden cursor-pointer group h-56 md:h-auto">
+                        <div className="relative rounded-2xl overflow-hidden group h-56 md:h-auto">
                             <img src="./images/oz-port.png" alt="Port & Commerce" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 z-10 px-6 py-5">
